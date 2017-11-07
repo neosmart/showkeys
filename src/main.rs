@@ -7,6 +7,7 @@ use termion::event::{Event, Key};
 use termion::raw::IntoRawMode;
 
 fn main() {
+    println!("showkeys {} by NeoSmart Technologies", env!("CARGO_PKG_VERSION"));
     let mut stdout = std::io::stdout();
 
     let tty = termion::get_tty()
