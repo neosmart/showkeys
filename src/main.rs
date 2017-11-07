@@ -8,6 +8,8 @@ use termion::raw::IntoRawMode;
 
 fn main() {
     println!("showkeys {} by NeoSmart Technologies", env!("CARGO_PKG_VERSION"));
+    println!("Press ctrl+c twice to exit");
+
     let mut stdout = std::io::stdout();
 
     let tty = termion::get_tty()
